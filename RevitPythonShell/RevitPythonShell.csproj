@@ -88,11 +88,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Autodesk.Navisworks.Api">
-      <HintPath>C:\Program Files\Autodesk\Navisworks Manage 2016\Autodesk.Navisworks.Api.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Navisworks Manage 2018\Autodesk.Navisworks.Api.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="ICSharpCode.AvalonEdit">
-      <HintPath>..\RequiredLibraries\ICSharpCode.AvalonEdit.dll</HintPath>
+    <Reference Include="ICSharpCode.AvalonEdit, Version=5.0.3.0, Culture=neutral, PublicKeyToken=9cc39be672370310, processorArchitecture=MSIL">
+      <HintPath>..\packages\AvalonEdit.5.0.4\lib\Net40\ICSharpCode.AvalonEdit.dll</HintPath>
     </Reference>
     <Reference Include="IronPython">
       <HintPath>..\RequiredLibraries\IronPython.dll</HintPath>
@@ -200,6 +200,7 @@
     <None Include="Icons\Settings-32.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="packages.config" />
     <None Include="Resources\ipy.ico" />
     <Resource Include="Images\Copy.png" />
     <Resource Include="Images\Cut.png" />
@@ -257,8 +258,9 @@
       <Name>RpsRuntime</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Icons" />
+    <Analyzer Include="..\..\..\..\..\..\Program Files\Autodesk\Navisworks Manage 2018\Autodesk.Navisworks.Api.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

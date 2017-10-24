@@ -65,12 +65,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Autodesk.Navisworks.Api">
-      <HintPath>C:\Program Files\Autodesk\Navisworks Manage 2016\Autodesk.Navisworks.Api.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files\Autodesk\Navisworks Manage 2018\Autodesk.Navisworks.Api.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="ICSharpCode.AvalonEdit">
-      <HintPath>..\RequiredLibraries\ICSharpCode.AvalonEdit.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="ICSharpCode.AvalonEdit, Version=5.0.3.0, Culture=neutral, PublicKeyToken=9cc39be672370310, processorArchitecture=MSIL">
+      <HintPath>..\packages\AvalonEdit.5.0.4\lib\Net40\ICSharpCode.AvalonEdit.dll</HintPath>
     </Reference>
     <Reference Include="IronPython, Version=2.7.0.40, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -138,6 +137,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\python_27_lib.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
